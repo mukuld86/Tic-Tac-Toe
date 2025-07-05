@@ -36,6 +36,21 @@ const checkWinner = () => {
             return;
         };
     }
+
+    let allFilled = true;
+    boxes.forEach((box)=>{
+        if(box.innerText==="")
+            allFilled=false;
+    });
+
+    if(allFilled && !gameOver){
+        gameOver=true;
+        msgContainer.classList.remove("hide");
+        msgContainer.classList.add("msg-container");
+        msg.innerText = `😐 It's a draw!`;
+        msg.style.fontSize = "5vmin";
+        console.log("Match Draw");
+    }
 }
 
 const showWinner = (winner) => {
@@ -54,7 +69,7 @@ const showWinner = (winner) => {
 
 function won() {
     gameOver = true;
-    console.log("Game Over");
+    console.log("Game resulted in a win");
     boxes.forEach((box) => {
         box.disabled = true;
     });

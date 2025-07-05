@@ -6,12 +6,96 @@ body{
     background-color: #638350;
     text-align: center;
 }
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+.homePage h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#playerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 80%;
+    max-width: 400px;
+}
+#playerForm input[type="text"] {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+#infoDone {
+    padding: 1rem;
+    border: none;
+    background-color: #C1292E;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#infoDone:hover {
+    background-color: #7eeb1f;
+}
+
+.mainGame{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.mainGame-Display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffc7;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+#msg{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#scores{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
 .container{
-    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .game{
     height: 60vmin;
     width: 60vmin;
@@ -21,45 +105,71 @@ body{
     align-items: center;
     gap: 1.5vmin;
 }
+
 .box{
     height: 18vmin;
     width: 18vmin;
+    font-size: 8vmin;
     border-radius: 1rem;
     border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    font-size: 8vmin;
     background-color: #e5e7c3;
     color: #C1292E;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
-#reset-btn{
-    padding: 1rem;;
+#reset-btn, #newGame-btn{
+    padding: 1rem 2rem;
     background-color: #161925;
     color: white;
     font-size: 1.25rem;
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
      
 }
-#newGame-btn{
-    padding: 1rem;;
-    background-color: #161925;
-    color: white;
-    font-size: 1.25rem;
-    border-radius: 1rem;
-    border: none;    
+
+#reset-btn:hover, #newGame-btn:hover {
+    background-color: #333;
 }
-#msg{
-    color: #ffffc7;
-    font-size: 5vmin;
+
+.button-group {
+    display: flex;
+    gap: 1rem;
 }
-#scores{
-    color: #ffffc7;
-    font-size: 5vmin;
+
+.homePage-Hide{
+    display: none;
 }
-.msg-container{
-    height: 20vmin;
-}
+
 .hide{
     display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .homePage h1 {
+        font-size: 2rem;
+    }
+
+    #playerForm input,
+    #infoDone {
+        font-size: 1rem;
+    }
+
+    .game {
+        width: 90vmin;
+        height: 90vmin;
+    }
+
+    .box {
+        height: 28vmin;
+        width: 28vmin;
+        font-size: 10vmin;
+    }
+
+    #msg, #scores {
+        font-size: 4.5vmin;
+    }
 }

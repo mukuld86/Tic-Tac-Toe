@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <div class="homePage">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <form id="playerForm">
+        <input type="text" id="player1" placeholder="Player 1 Name" required />
+        <input type="text" id="player2" placeholder="Player 2 Name" required />
+        <button type="submit" id="infoDone">Start Game</button>
+        </form>
+      </div>
+
+    <div class="mainGame">
         <div class="hide">
             <p id="msg">Winner</p>
             <p id="scores">Scores</p>
@@ -27,7 +36,7 @@
         </div>
         <button id="newGame-btn">New Game</button>
         <button id="reset-btn">Reset</button>
-    </main>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@ const checkWinner = () => {
         gameOver=true;
         msgContainer.classList.remove("hide");
         msgContainer.classList.add("msg-container");
-        msg.innerText = `😐 It's a draw!`;
+        msg.innerText = `🙃It's a draw!🙃`;
         msg.style.fontSize = "5vmin";
         console.log("Match Draw");
     }
@@ -56,7 +56,7 @@ const checkWinner = () => {
 const showWinner = (winner) => {
     msgContainer.classList.remove("hide");
     msgContainer.classList.add("msg-container");
-    msg.innerText = `🎉 ${winner === "O" ? player1Name : player2Name} won the game!`; 
+    msg.innerText = `🎉 ${winner === "O" ? player1Name : player2Name} won the game!👌`; 
     msg.style.fontSize = "5vmin";
     if(turnO){
         scoreX++;

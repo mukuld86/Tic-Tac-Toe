@@ -20,9 +20,6 @@ A simple yet interactive **Tic Tac Toe** game built using **HTML**, **CSS**, and
 
 - **HTML5** for the structure  
 - **CSS3** for styling and layout  
-- **JavaScript (Vanilla)** for game logic and DOM manipulation
+- **JavaScript** for game logic and DOM manipulation
 
 ---
-
-## 📂 Project Structure
-

@@ -2,7 +2,6 @@
 
 A simple yet interactive **Tic Tac Toe** game built using **HTML**, **CSS**, and **JavaScript**. Play against a friend in the browser with a clean and responsive UI.
 
-![Tic Tac Toe Screenshot](https://raw.githubusercontent.com/mukuld86/Tic-Tac-Toe/main/screenshot.png) <!-- Replace with an actual screenshot if available -->
 
 ---
 
